@@ -1,0 +1,32 @@
+body{
+    max-width: 800px;
+    margin-inline: auto;
+}
+.item{
+    display:inline-block;
+    border: 1px solid lightgray;
+    width:100px;
+    height:100px;
+    margin-block: 1rem;
+    text-align: center;
+    box-shadow:0 5px 5px rgba(0, 0, 0, .3);
+}
+.item::before {
+    content:"";
+    display:block;
+    padding: .5rem;
+}
+.green::before{background-color: green;}
+.red::before{background-color: red;}
+.blue::before{background-color: blue;}
+
+.button{
+    text-align: center;
+    margin-block: 2rem;
+    padding: 1rem;
+}
+button{
+    padding: 0.5rem 2rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}

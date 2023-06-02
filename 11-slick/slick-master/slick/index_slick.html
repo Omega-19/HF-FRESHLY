@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importation du CSS -->
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="./slick-theme.css">
+    <title>Slick-doc</title>
+    <style>
+        .item{
+            margin-inline: 5px;
+        }
+        .item{
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            padding-block: 1rem;
+        }
+        /* Mettre du gap entre les éléments */
+        .slick-slide{
+            margin-right: 1rem;
+        }
+        .parente{
+            display: flex;
+            background-color: lightsalmon;
+            padding: 3rem;
+            position: relative;
+        }
+        .slick-prev{left: 1.5rem;}
+        .slick-next{right: 1.5rem;}
+    </style>
+</head>
+<body>
+    <main>
+        <h1><em>Slik Slider</em></h1>
+        <div class="parente">
+                    <img src="../../../10-OwlCarousel2-develop/owl-carousel-main_exo/plugin-owl-carousel/instructions/ressources/images/hollywood1.jpg" alt="">
+                    <img src="../../../10-OwlCarousel2-develop/owl-carousel-main_exo/plugin-owl-carousel/instructions/ressources/images/hollywood2.jpg" alt="">
+                    <img src="../../../10-OwlCarousel2-develop/owl-carousel-main_exo/plugin-owl-carousel/instructions/ressources/images/hollywood3.jpg" alt="">
+                    <img src="../../../10-OwlCarousel2-develop/owl-carousel-main_exo/plugin-owl-carousel/instructions/ressources/images/hollywood4.jpg" alt="">
+                    <img src="../../../10-OwlCarousel2-develop/owl-carousel-main_exo/plugin-owl-carousel/instructions/ressources/images/hollywood5.jpg" alt="">
+                    <img src="../../../10-OwlCarousel2-develop/owl-carousel-main_exo/plugin-owl-carousel/instructions/ressources/images/hollywood6.jpg" alt="">
+                    <img src="../../../10-OwlCarousel2-develop/owl-carousel-main_exo/plugin-owl-carousel/instructions/ressources/images/hollywood7.jpg" alt="">
+        </div>
+        <!-- integration du jquery -->
+        <script src="./jquery-3.7.0.min.js"></script>
+        <!-- importation du Slick Slider -->
+        <script src="slick.min.js"></script>
+        <!-- charger le plugin sur le parent -->
+        <script>
+            $(function(){
+                $(".parente").slick({
+                    slidesToShow: 3,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed:100
+                });
+            });
+        </script>
+    </main>
+</body>
+</html>
